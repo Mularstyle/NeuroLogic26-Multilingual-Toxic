@@ -83,7 +83,7 @@ pip install transformers datasets accelerate openpyxl scikit-learn pandas numpy 
 ├── toxic_classification.ipynb          # Main notebook with full pipeline
 ├── toxic_labeled.xlsx                  # Training data (not included in repo)
 ├── toxic_no_label_evaluation.xlsx      # Test data (not included in repo)
-├── toxic_no_label_evaluation_predicted.xlsx  # Predictions output
+├── no_label.xlsx  # Predictions output
 ├── requirements.txt                    # Python dependencies
 ├── results_screenshots/                # Screenshots of model performance
 │   ├── validation_scores.png           # Validation metrics summary
