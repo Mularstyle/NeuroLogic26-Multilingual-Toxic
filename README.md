@@ -46,6 +46,9 @@ Primary metric is **ROC-AUC** as specified in the challenge requirements. Also t
 
 The model shows strong performance across both classes. With an ROC-AUC of 0.9879, it demonstrates excellent ability to distinguish between toxic and non-toxic comments. The high recall (96.77%) means we're catching most toxic comments, while maintaining good precision (94.57%) to avoid false positives.
 
+### Visual Results
+Detailed performance visualizations including confusion matrix, ROC curve, and training metrics can be found in the `results_screenshots/` folder.
+
 ## How to Reproduce
 
 ### Requirements
@@ -64,6 +67,10 @@ pip install transformers datasets accelerate openpyxl scikit-learn pandas numpy 
 2. Open `toxic_classification.ipynb`
 3. Run all cells in order
 4. Output file `toxic_no_label_evaluation_predicted.xlsx` will be saved in `/content/`
+5. Screenshots of results will be generated:
+   - Cell 12: Validation scores summary
+   - Cell 15: Confusion matrix, ROC curve, and predictions distribution
+   - Save these to `results_screenshots/` folder
 
 ### Environment
 - Python 3.8+
@@ -78,6 +85,11 @@ pip install transformers datasets accelerate openpyxl scikit-learn pandas numpy 
 ├── toxic_no_label_evaluation.xlsx      # Test data (not included in repo)
 ├── toxic_no_label_evaluation_predicted.xlsx  # Predictions output
 ├── requirements.txt                    # Python dependencies
+├── results_screenshots/                # Screenshots of model performance
+│   ├── validation_scores.png           # Validation metrics summary
+│   ├── confusion_matrix.png            # Confusion matrix visualization
+│   ├── roc_curve.png                   # ROC curve with AUC score
+│   └── predictions_distribution.png    # Distribution of predictions
 └── README.md                           # This file
 ```
 
